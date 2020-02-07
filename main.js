@@ -15,7 +15,7 @@ function showDishes(dishes){
      const template = document.querySelector("template").content;
     const clone = template.cloneNode(true);
 
-    clone.querySelector("h3").textContent = dishes.name;
+    clone.querySelector("h2").textContent = dishes.name;
     clone.querySelector("h3").textContent = dishes.shortdescription;
     clone.querySelector("h4").textContent = dishes.longdescription;
 

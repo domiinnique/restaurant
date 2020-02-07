@@ -3,8 +3,8 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding: 20px;
   font-size: 18px;
   line-height: 1.8rem;
 }
@@ -12,7 +12,7 @@ h1 {
   text-align: center;
 }
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 a {
@@ -22,8 +22,11 @@ a:hover {
   color: antiquewhite;
 }
 #wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
+   display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 10px;
 }
 
 
@@ -80,15 +83,13 @@ cite:before {
   flex-direction: column;
 }
 .course img {
-  box-shadow: 1px 1px 1px 1px var(--color-grey-dark);
+  box-shadow: 1px 1px 1px 1px;
 }
-.course .soldout {
-  display: none;
-}
+
 .course.soldout .soldout {
   position: absolute;
   top: 50%;
-  width: 100%;
+  width: 50%;
   text-align: center;
   color: lightgoldenrodyellow;
   display: block;
