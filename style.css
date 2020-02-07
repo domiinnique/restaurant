@@ -25,16 +25,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr;
 }
-#wrapper > * {
-  margin: 1rem;
-}
-#wrapper > header {
-  margin: 0;
-}
-aside,
-footer {
-  order: 1;
-}
+
 
 footer li {
   list-style: none;
@@ -45,7 +36,6 @@ footer li:before {
   display: inline-block;
   height: 1rem;
   width: 1rem;
-  background-image: url(../gfx/geo.svg);
 }
 footer li > address {
   display: inline-block;
@@ -58,9 +48,7 @@ nav a {
   display: block;
   text-decoration: none;
   padding: 0.5rem;
-  background: var(--color-blue-light);
-  color: var(--color-grey-lightest);
-  border-bottom: 1px solid var(--color-grey-lightest);
+
   transition: all 0.1s;
 }
 nav a:hover {
@@ -75,40 +63,11 @@ main section h2 {
   text-align: center;
   padding-bottom: 0.5rem;
 }
-/*
-aside blockquote {
-  margin: 1rem;
-  background-color: var(--color-grey-base);
-  color: var(--color-grey-lighter);
-  padding: 0.5rem;
-}*/
-blockquote {
-  background: var(--color-grey-lightest);
-  border-left: 10px solid var(--color-grey-light);
-  margin: 1.5rem 10px;
-  padding: 0.5rem 10px;
-  quotes: "'";
-  box-shadow: 1px 1px 2px 0px var(--color-grey-base);
-}
-blockquote:before,
-blockquote p:after {
-  color: var(--color-grey-light);
-  content: '"';
-  font-style: italic;
-  font-size: 3rem;
-  line-height: 0.1rem;
-  margin-right: 0.25rem;
-  vertical-align: -0.8rem;
-}
-blockquote p:after {
-  vertical-align: -1.8rem;
-}
-blockquote p {
-  display: inline;
-}
+
+
 cite {
   display: block;
-  color: var(--color-grey-base);
+  color color: darkgoldenrod;
   font-size: var(--font-size-sm);
   font-family: var(--font-family-serif);
 }
@@ -131,9 +90,9 @@ cite:before {
   top: 50%;
   width: 100%;
   text-align: center;
-  color: var(--color-grey-lightest);
+  color: lightgoldenrodyellow;
   display: block;
-  background-color: var(--color-pink-light);
+  background-color: #7c0000;
   transform: rotate(-45deg);
 }
 .course h3 {
@@ -150,7 +109,7 @@ cite:before {
   position: absolute;
   right: -4px;
   bottom: -4px;
-  background: var(--color-white);
+  background color: antiquewhite;
   margin: 0;
   padding: 0.5rem 1rem;
   box-shadow: 1px 1px 1px 1px var(--color-grey-dark);
@@ -174,9 +133,8 @@ cite:before {
   border: none;
   width: 100%;
   padding: 1rem;
-  color: var(--color-grey-lightest);
-  font-size: var(--font-size-base);
-  background: var(--color-blue-base);
+  color: antiquewhite;
+  background color: navajowhite;
   transition: all 0.4s;
   box-shadow: 2px 2px 0px 0px transparent;
   position: relative;
@@ -196,16 +154,16 @@ cite:before {
 }
 .course button:hover {
   cursor: pointer;
-  color: var(--color-white);
-  background: var(--color-blue-light);
+  color: navajowhite;
+  background color: antiquewhite;
   box-shadow: 2px 2px 0px 0px var(--color-blue-base);
 }
 .course button:hover:before {
   transform: scaleX(1);
 }
 .course button:active {
-  background: var(--color-pink-light);
-  box-shadow: 2px 2px 0px 0px var(--color-pink-dark);
+  background color: beige;
+  box-shadow: 2px 2px 0px 0px;
   transition: all 0.1s;
 }
 
@@ -217,7 +175,6 @@ cite:before {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
     grid-auto-rows: 1fr;
   }
   footer {
@@ -231,7 +188,7 @@ cite:before {
 @media screen and (min-width: 800px) {
   nav {
     display: flex;
-    background: var(--color-blue-light);
+    background color: antiquewhite;
   }
   nav a {
     border-bottom-color: transparent;
@@ -239,29 +196,9 @@ cite:before {
     text-align: center;
   }
 }
-@media screen and (min-width: 1000px) {
-  aside {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  aside h2 {
-    grid-column: 1/-1;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #wrapper {
-    grid-template-columns: 300px 1fr;
-  }
-  header {
-    grid-column: 1/-1;
-  }
 
-  aside {
-    order: 0;
-    display: initial;
-    border-right: 1px solid var(--color-grey-base);
-  }
+
+
   footer {
     grid-column: 1/-1;
     grid-template-columns: 1fr 1fr 1fr;
@@ -269,11 +206,5 @@ cite:before {
   }
   footer > section:last-child {
     grid-column: auto;
-  }
-}
-@media screen and (min-width: 1300px) {
-  #wrapper {
-    width: 1200px;
-    margin: auto;
   }
 }
