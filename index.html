@@ -3,68 +3,86 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>My Awesome Restaurant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+  <title>MENU</title>
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <div id="wrapper">
+<header>
+<div class="topnav">
+   <a href="#starters"><p>STARTERS</p></a>
+  <a href="#mains"><p>MAINS</p></a>
+<a href="#desserts"><p>DESSERTS</p></a>
+ <a href="#drinks"><p>DRINKS</p></a>
+ <a href="#sideorders"><p>SIDEORDERS</p></a>
+    </div>
+    </header>
+ <h5>MENU</h5>
+<div id="wrapper">
 
-   <header>
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-      </header>
-    <main>
-      <h5>MENU</h5>
 
 
-      <section>
-        <h5>Starters</h5>
+
+
+
+<main class="deals">
 <template>
-        <article class="course soldout sale">
-          <header>
-            <h2>Russian Ringbread</h2>
+
+<article class="sale-item">
+    <article class="course soldout sale">
+    <div class="starters"></div>
+          <h2>STARTERS</h2>
+          <h3>Name</h3>
             <p class="soldout">Sold Out!</p>
-            <img src="imgs/medium/ringbroed-md.jpg" style=width=100%/>
-            <p class="price price-discount">xxx</p>
+           <img src="imgs/medium/ringbroed-md.jpg" class="center"/>
+            <p class="discount">xxx</p>
             <p class="price price-full">29</p>
-          </header>
 
-            <h3>
-              Russisk ringbrød af Karapatisk mel
-            </h3>
-
-            <h4>
-              Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.
-            </h4>
+            <h4>short</h4>
+            <h5>long</h5>
 
             <button>READ MORE</button>
+    </article>
+</article>
+</template>
+</main>
 
-        </article>
-          </template>
+  <article class="sale-item">
+       <div class="mains"></div>
+       <h2>MAINS</h2>
+       </article>
 
-      </section>
-    </main>
+       <article class="sale-item">
+       <div class="desserts"></div>
+       <h2>DESSERTS</h2>
+       </article>
+
+    <article class="sale-item">
+       <div class="drinks"></div>
+       <h2>DRINKS</h2>
+       </article>
+
+
+    <article class="sale-item">
+       <div class="sideorders"></div>
+       <h2>SIDEORDERS</h2>
+       </article>
 
 
 
-    <footer>
+    </div>
+
+   <footer>
       <section>
         <h3>Locations</h3>
-
-            <address>Nørrebrogade 84</address>
+ <address>Nørrebrogade 84</address>
             <a>+45 12 12 12 12</a>
-
-
-      </section>
+ </section>
       <section>
         <h3>Contact</h3>
         <address>
@@ -75,14 +93,10 @@
       </section>
       <section>
         <h3>Misc</h3>
-        <blockquote>
           <p>This is where I write something really important some day</p>
-          <cite>the owner</cite>
-        </blockquote>
       </section>
     </footer>
-      ----
-  </div>
+
 
     <script src="main.js"></script>
 

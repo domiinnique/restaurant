@@ -12,12 +12,16 @@ fetch("https://kea-alt-del.dk/t5/api/productlist")
 }
 
 function showDishes(dishes){
-     const template = document.querySelector("template").content;
+
+    const template = document.querySelector("template").content;
     const clone = template.cloneNode(true);
 
-    clone.querySelector("h2").textContent = dishes.name;
-    clone.querySelector("h3").textContent = dishes.shortdescription;
-    clone.querySelector("h4").textContent = dishes.longdescription;
+    clone.querySelector("h3").textContent = dishes.name;
+    clone.querySelector("h4").textContent = dishes.shortdescription;
+
+    clone.querySelector("h5").textContent = dishes.longdescription;
+
+
 
     const parent = document.querySelector("main");
     parent.appendChild(clone)

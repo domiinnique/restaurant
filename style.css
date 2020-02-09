@@ -1,116 +1,90 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
+#wrapper
+{
+  background-color: floralwhite;
+  padding: 30px;
+  margin: 20px;
+    align-content: center;
+     display: flex;
+  justify-content: space-between;
 }
 
-li {
-  float: left;
+.category {
+  background: salmon;
+  padding: 20px;
 }
 
-li a {
+
+
+.center {
   display: block;
-  color: #666;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 15px;
+  font-size: 18px;
 }
 
-li a:hover:not(.active) {
-  background-color: #ddd;
+
+.topnav a:hover {
+  background-color: floralwhite;
 }
 
-li a.active {
-  color: white;
-  background-color: #4CAF50;
-}
 
 img {
-   max-width: 50%;
+   max-width: 100%;
   height: auto;
- border-radius: 8px;
-}
-#wrapper {
-   display: grid;
-  grid-column-gap: 40px;
-  grid-template-columns: auto auto auto;
-  background-color: white;
-  padding: 10px;
+ border-radius: 10px;
+
 }
 
 
-footer li {
-  list-style: none;
-  margin-bottom: 1rem;
-}
-footer li:before {
-  content: "";
-  display: inline-block;
-  height: 1rem;
-  width: 1rem;
-}
-footer li > address {
-  display: inline-block;
-}
-footer li > a {
-  display: block;
-  margin-left: 1rem;
-}
-nav a {
-  display: block;
-  text-decoration: none;
-  padding: 0.5rem;
 
-  transition: all 0.1s;
-}
-nav a:hover {
-  background: var(--color-grey-lightest);
-  color: var(--color-blue-base);
-  border-bottom: 1px solid var(--color-blue-dark);
-}
 main section h2 {
-  border-bottom: 1px solid var(--color-grey-base);
-  color: var(--color-grey-darkest);
+  border-bottom: 1px #ea8484;
   width: 100%;
   text-align: center;
   padding-bottom: 0.5rem;
 }
 
 
-cite {
-  display: block;
-  color color: darkgoldenrod;
-  font-size: var(--font-size-sm);
-  font-family: var(--font-family-serif);
-}
-cite:before {
-  content: " - ";
-}
 .course {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 .course img {
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: 3px;
 }
 
 .course.soldout .soldout {
   position: absolute;
   top: 50%;
-  width: 50%;
+  width: 30%;
   text-align: center;
-  color: lightgoldenrodyellow;
+    align-self: center;
+  color: white;
   display: block;
   background-color: #7c0000;
   transform: rotate(-45deg);
 }
-.course h3 {
-  font-family: var(--font-family-serif);
-}
+
 .course header {
   position: relative;
   display: flex;
@@ -147,20 +121,13 @@ cite:before {
   width: 100%;
   padding: 1rem;
   color: antiquewhite;
-  background color: navajowhite;
   transition: all 0.4s;
-  box-shadow: 2px 2px 0px 0px transparent;
   position: relative;
 }
 .course button:before {
-  content: "";
   position: absolute;
-  background: rgba(255, 255, 255, 0.1);
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
-  top: 0;
-  left: 0;
   transform: scaleX(0);
   transition: all 0.5s;
   transform-origin: top left;
@@ -224,8 +191,17 @@ h1
     font-size: 50px;
     text-align: center;
     margin-top: 0px;
- font-family: 'Sacramento', cursive;
+ font-family: 'Nanum Myeongjo', serif;
 
+}
+
+h {
+    color:#521f00;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0px;
+    font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: 2px;
 }
 
 
@@ -235,7 +211,7 @@ h2
     font-size: 30px;
     text-align: center;
     margin-top: 0px;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Nanum Myeongjo', serif;
     letter-spacing: 2px;
 
 }
@@ -250,7 +226,7 @@ h3
     font-size: 30px;
     text-align: center;
     margin-top: 0px;
- font-family: 'Abel', sans-serif;
+ font-family: 'Nanum Myeongjo', serif;
 
 }
 
@@ -260,30 +236,88 @@ h4
     font-size: 30px;
     text-align: center;
     margin-top: 0px;
- font-family: 'Abel', sans-serif;
+ font-family: 'Nanum Myeongjo', serif;
 
 }
 
 h5
 {
-    color:#521f00;
+    color:#884343;
     font-size: 50px;
     text-align: center;
     margin-top: 0px;
- font-family: 'Abel', sans-serif;
+ font-family: 'Nanum Myeongjo', serif;
 
 }
 
 
 p
 {
-    font-family: 'Abel', sans-serif;
-    color:#521f00;
-        font-size: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+    color: lightslategrey;
+   font-size: 10px;
 }
-p2
-{
-    font-family: 'Abel', sans-serif;
-    color:#521f00;
-        font-size: 20px;
+
+
+
+@supports (display: grid) {
+  main {
+    max-width: 10000px;
+    margin: 0;
+  }
+  article {
+    margin: 0;
+  }
+  .deals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+}
+
+.deals {
+  font-family: Avenir, Roboto, Helvetica, san-serif;
+  font-size: 80%;
+}
+.sale-item {
+  display: flex;
+  flex-flow: column;
+  border:  1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.sale-item > h1 {
+  margin: 1rem 1rem 0;
+}
+.sale-item > ul {
+  margin: 0 0 1rem;
+}
+.sale-item > p {
+  margin: 0.25em 1rem 1rem;
+}
+.sale-item > img {
+  order: -1;
+  align-self: center;
+}
+.sale-item > button {
+  margin-top: auto;
+  background: teal;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+body {
+  padding: 1rem;
+}
+
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+article {
+  margin: 1rem 0;
 }
