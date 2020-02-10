@@ -19,8 +19,8 @@ function showDishes(dishes){
     clone.querySelector("h3").textContent = dishes.name;
     clone.querySelector("h4").textContent = dishes.shortdescription;
 
-    clone.querySelector("h5").textContent = dishes.longdescription;
-
+    clone.querySelector(".discount").textContent = dishes.discount;
+clone.querySelector(".price").textContent = dishes.price;
 
 
     const parent = document.querySelector("main");
