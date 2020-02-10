@@ -16,12 +16,14 @@ function showDishes(dishes){
     const template = document.querySelector("template").content;
     const clone = template.cloneNode(true);
 
+    clone.querySelector("h").textContent = dishes.id;
+    clone.querySelector("h2").textContent = dishes.category;
     clone.querySelector("h3").textContent = dishes.name;
     clone.querySelector("h4").textContent = dishes.shortdescription;
 
-    clone.querySelector(".discount").textContent = dishes.discount;
-clone.querySelector(".price").textContent = dishes.price;
 
+    clone.querySelector(".discount").textContent = dishes.discount;
+clone.querySelector("h5").textContent = dishes.price;
 
     const parent = document.querySelector("main");
     parent.appendChild(clone)

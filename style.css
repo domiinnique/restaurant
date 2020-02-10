@@ -188,20 +188,11 @@ main section h2 {
 h1
 {
     color:#521f00;
-    font-size: 50px;
+    font-size: 20px;
     text-align: center;
     margin-top: 0px;
  font-family: 'Nanum Myeongjo', serif;
 
-}
-
-h {
-    color:#521f00;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 0px;
-    font-family: 'Nanum Myeongjo', serif;
-    letter-spacing: 2px;
 }
 
 
@@ -243,7 +234,7 @@ h4
 h5
 {
     color:#884343;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin-top: 0px;
  font-family: 'Nanum Myeongjo', serif;
